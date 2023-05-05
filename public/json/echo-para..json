@@ -1,0 +1,19 @@
+{
+    "hecho": [
+        {
+            "playlist": "Radar de novedades",
+            "description": "Las novedades de los artistas que más te gustan",
+            "album-image": "../images/Hecho para/grupo-frontera.jpg"
+        },
+        {
+            "playlist": "Mix diario 1",
+            "description": "Majo solís, jesús adrián romero, en...",
+            "album-image": "../images/Hecho para/majo.jpg"
+        },
+        {
+            "playlist": "Mix diario 2",
+            "description": "Intocable, ladron, grupo brindys y más",
+            "album-image": "../images/Hecho para/intocable.jpg"
+        }
+    ]
+}
