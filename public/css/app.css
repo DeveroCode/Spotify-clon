@@ -15,6 +15,7 @@
 /* My variables */
 :root {
     --Color-gray: #7B7B7B;
+    --Color-gray-secondary: #181818;
     --Color-white: #fff;
     --Color-black: #000;
     --Color-second-black: #272A2E;
@@ -169,8 +170,10 @@ main {
     left: 0;
     width: 100%;
     z-index: -1;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
+
 
 .buttons {
     width: 100%;
@@ -324,6 +327,52 @@ main {
     text-decoration: underline;
 }
 
+/* Start styles for -> Playlist */
+.playlist {
+    width: 100%;
+    max-width: 90rem;
+    margin-top: 4rem;
+    padding: 0 3rem 0 3rem;
+
+    display: flex;
+    gap: 1.8rem;
+}
+
+
+.playlist__cont {
+    width: calc(100% / 3 - 3.2rem);
+    height: 29.1rem !important;
+    color: var(--Color-white);
+    font-size: 1.3rem;
+
+    border-radius: 0.3rem;
+    background-color: var(--Color-gray-secondary);
+    transition: all 0.3s ease-in-out;
+    filter: brightness(85%);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlist__cont:hover {
+    filter: brightness(100%);
+}
+
+.playlist-image img {
+    width: 16.5rem;
+    height: 16.6rem;
+    border-radius: 0.3rem;
+    box-shadow: 10px 1px 29px -8px rgba(0, 0, 0, 0.75);
+}
+
+.playlist__information {
+    padding: 0 0 0 1.5rem;
+}
+
+
 @media (min-width: 999px) {
 
     /* Section playlist */
@@ -379,4 +428,29 @@ main {
     .nav-first {
         padding-right: 5rem !important;
     }
+
+    /* Start playlist styles */
+    .playlist {
+        width: 100%;
+        max-width: 160rem;
+    }
+
+    .playlist__cont {
+        width: calc(100% / 6 - 3rem);
+        height: 25.6rem;
+        color: var(--Color-white);
+        font-size: 1.3rem;
+
+        border-radius: 0.3rem;
+        background-color: var(--Color-gray-secondary);
+        transition: all 0.3s ease-in-out;
+        filter: brightness(85%);
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
