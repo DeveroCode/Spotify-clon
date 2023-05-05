@@ -81,6 +81,20 @@ main {
     flex-direction: column;
 }
 
+footer {
+    width: 100%;
+    max-width: 90rem;
+    height: 9.1rem;
+
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--Color-gray-secondary);
+}
+
 /* Snippets */
 .uppercase {
     text-transform: capitalize !important;
@@ -375,6 +389,36 @@ main {
 
 .playlist__information {
     padding: 0 0 0 1.5rem;
+}
+
+/* Start footer */
+.cont-buttons {
+    width: 100%;
+    max-width: 39.1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play {
+    background-color: var(--Color-white) !important;
+    border-radius: 100%;
+}
+
+.buttons-btn {
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
 }
 
 
