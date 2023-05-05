@@ -1,19 +1,34 @@
 {
     "hecho": [
         {
-            "playlist": "Radar de novedades",
-            "description": "Las novedades de los artistas que más te gustan",
-            "album-image": "../images/Hecho para/grupo-frontera.jpg"
+            "playlist": "Radar de noved...",
+            "description": "Las novedades de los artistas que sigues ...",
+            "album_image": "./../public/images/Hecho-para/grupo-frontera.jpg"
         },
         {
             "playlist": "Mix diario 1",
             "description": "Majo solís, jesús adrián romero, en...",
-            "album-image": "../images/Hecho para/majo.jpg"
+            "album_image": "./../public/images/Hecho-para/majo.jpg"
         },
         {
             "playlist": "Mix diario 2",
             "description": "Intocable, ladron, grupo brindys y más",
-            "album-image": "../images/Hecho para/intocable.jpg"
+            "album_image": "./../public/images/Hecho-para/intocable.jpg"
+        },
+        {
+            "playlist": "Mix diario 3",
+            "description": "Lana del rey, aurora, JAPANESE y más",
+            "album_image": "./../public/images/Hecho-para/lana.jpg"
+        },
+        {
+            "playlist": "Mix diario 4",
+            "description": "Bring me the horizon, fall out boy, link park...",
+            "album_image": "./../public/images/Hecho-para/bringme.jpg"
+        },
+        {
+            "playlist": "Mix diario 5",
+            "description": "La zenda norteña, la fiera de ojinaga, la....",
+            "album_image": "./../public/images/Hecho-para/la-zenda.jpg"
         }
     ]
 }
