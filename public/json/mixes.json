@@ -1,0 +1,34 @@
+{
+    "mixes": [
+        {
+            "playlist": "Mix de given",
+            "description": "centimillimental, liSA, y BURNOUT...",
+            "album_image": "./../public/images/mixes/given.jpg"
+        },
+        {
+            "playlist": "Mix de AURORA",
+            "description": "girl in red, billie eilish y lana del rey",
+            "album_image": "./../public/images/mixes/aurora.jpg"
+        },
+        {
+            "playlist": "Mix de j-pop",
+            "description": "aqua timez, LiSA, FLOW y más",
+            "album_image": "./../public/images/mixes/j-pop.jpg"
+        },
+        {
+            "playlist": "Mix de rock",
+            "description": "All good things, nirvana, linkin park y más",
+            "album_image": "./../public/images/mixes/linkin-park.jpg"
+        },
+        {
+            "playlist": "Mix de grupera",
+            "description": "grupo bryndis, ladron, los mismos y más",
+            "album_image": "./../public/images/mixes/brindys.jpg"
+        },
+        {
+            "playlist": "Mix de metal",
+            "description": "Bullet for my valentine, hammerFall, rhapsody...",
+            "album_image": "./../public/images/mixes/mottionles.png"
+        }
+    ]
+}
