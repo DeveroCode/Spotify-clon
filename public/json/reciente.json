@@ -1,0 +1,34 @@
+{
+    "reciente": [
+        {
+            "playlist": "AMV Playlis",
+            "description": "Thanks for 10k. I'll search for new songs ASAP",
+            "album_image": "./../public/images/recientemente/AMV.jpg"
+        },
+        {
+            "playlist": "AMV's",
+            "description": "Algimas músicas que descobri por AMV's de...",
+            "album_image": "./../public/images/recientemente/amv-2.jpg"
+        },
+        {
+            "playlist": "Openings",
+            "description": "all opening and endings of bleach",
+            "album_image": "./../public/images/recientemente/bleach-openings.jpg"
+        },
+        {
+            "playlist": "Number one",
+            "description": "OST and sounds of BLEACH",
+            "album_image": "./../public/images/recientemente/number-one.webp"
+        },
+        {
+            "playlist": "gift",
+            "description": "GIVEN the gift album of the best saga",
+            "album_image": "./../public/images/playlist/given.jpg"
+        },
+        {
+            "playlist": "Are you GYM rat?",
+            "description": "all the songs to bring out the beast mode",
+            "album_image": "./../public/images/recientemente/gym-rat.jpg"
+        }
+    ]
+}
