@@ -4,6 +4,7 @@ const data = Object.values(songs.musicas);
 const btnPlay = document.querySelector('.play');
 const btnNext = document.querySelector('.next');
 const btnPrev = document.querySelector('.previous');
+const progressBar = document.querySelector('.progress');
 
 const play = document.querySelector('.play-image');
 const pause = document.querySelector('.pause-image');
@@ -14,9 +15,14 @@ let audio;
 let currentIndex = 0;
 let songSrc = data[currentIndex].cancion;
 
-btnPlay.addEventListener('click', allSong);
-btnPrev.addEventListener('click', nextSong);
-btnNext.addEventListener('click', prevSong);
+// Cargamos todas las funciones
+document.addEventListener('DOMContentLoaded', startApp);
+
+function startApp() {
+    btnPlay.addEventListener('click', allSong);
+    btnPrev.addEventListener('click', nextSong);
+    btnNext.addEventListener('click', prevSong);
+}
 
 function allSong() {
     btnPlay.setAttribute('data-src', songSrc);
@@ -24,6 +30,7 @@ function allSong() {
     if (!audio) {
         audio = new Audio(songSrc);
         audio.addEventListener('ended', nextSong);
+        audio.addEventListener('timeupdate', updateProgress);
         dataSongs(currentIndex);
     }
 
@@ -31,11 +38,13 @@ function allSong() {
         audio.play();
         play.classList.add('hidden');
         pause.classList.add('block');
+        audio.addEventListener('timeupdate', updateProgress);
         playing = true;
     } else {
         audio.pause();
         play.classList.remove('hidden');
         pause.classList.remove('block');
+        audio.addEventListener('timeupdate', updateProgress);
         pause.classList.add('hidden');
         playing = false;
     }
@@ -56,6 +65,7 @@ function nextSong() {
     setTimeout(() => {
         audio = new Audio(songSrc);
         audio.addEventListener('ended', nextSong);
+        audio.addEventListener('timeupdate', updateProgress);
         dataSongs(currentIndex);
         audio.play();
         pause.classList.add('block');
@@ -74,6 +84,7 @@ function prevSong() {
     setTimeout(() => {
         audio = new Audio(songSrc);
         audio.addEventListener('ended', nextSong);
+        audio.addEventListener('timeupdate', updateProgress);
         dataSongs(currentIndex);
         audio.play();
         pause.classList.add('block');
@@ -99,5 +110,21 @@ function dataSongs(currentIndex) {
     cont.appendChild(albumFragment);
 }
 
+function updateProgress() {
+    const currentTime = audio.currentTime;
+    const currentTimeSong = document.querySelector('.current');
+    const durationSong = document.querySelector('.total-song');
+    const duration = audio.duration;
+    const progress = currentTime / duration * 100;
 
+    currentTimeSong.textContent = formatTime(currentTime);
+    durationSong.textContent = formatTime(duration);
 
+    progressBar.style.width = `${progress}%`;
+}
+
+function formatTime(times) {
+    const minutes = Math.floor(times / 60);
+    const seconds = Math.floor(times % 60);
+    return `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+}

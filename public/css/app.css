@@ -478,12 +478,30 @@ footer {
 .cont-bar-progress {
     width: 100%;
     max-width: 25.9rem;
-    height: 0.4rem;
+    height: 0.5rem;
 
-    margin-top: 1.5rem !important;
+    /* margin-top: 1.5rem !important; */
     margin: 0 auto;
     background-color: var(--Color-gray);
     border-radius: 0.4rem;
+}
+
+.cont-timing {
+    width: 100%;
+    max-width: 33.2rem;
+    color: var(--Color-white);
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 19rem;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--Color-white);
+    border-radius: 0.5rem;
+    width: 0;
+    transition: width 0.1s ease-in-out;
 }
 
 
