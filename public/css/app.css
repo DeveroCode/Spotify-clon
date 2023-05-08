@@ -410,8 +410,14 @@ footer {
     max-width: 35.5rem;
     margin-top: 2rem;
     display: flex;
+    flex-direction: column;
+}
+
+.cont-buttons-play {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 2.5rem;
+    gap: 1rem;
 }
 
 .center {
@@ -468,6 +474,18 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
+.cont-bar-progress {
+    width: 100%;
+    max-width: 25.9rem;
+    height: 0.4rem;
+
+    margin-top: 1.5rem !important;
+    margin: 0 auto;
+    background-color: var(--Color-gray);
+    border-radius: 0.4rem;
+}
+
 
 @media (min-width: 999px) {
 
