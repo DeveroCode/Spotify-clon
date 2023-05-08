@@ -1,0 +1,34 @@
+{
+    "musicas": [
+        {
+            "name": "desvelado",
+            "artist": "Boby pulido",
+            "cancion": "./../public/songs/desvelado.mp3",
+            "image_album": "./../public/images/songs/develado.jpg"
+        },
+        {
+            "name": "en esta no",
+            "artist": "La esencia para ti",
+            "cancion": "./../public/songs/esta.mp3",
+            "image_album": "./../public/images/songs/en-esta-no.jpg"
+        },
+        {
+            "name": "x100to",
+            "artist": "Grupo frontera",
+            "cancion": "./../public/songs/x100to.mp3",
+            "image_album": "./../public/images/Hecho-para/grupo-frontera.jpg"
+        },
+        {
+            "name": "Thousand year blood",
+            "artist": "Bleach-opening",
+            "cancion": "./../public/songs/opening.mp3",
+            "image_album": "./../public/images/songs/opening.jpg"
+        },
+        {
+            "name": "Werewolf",
+            "artist": "Motionless In White",
+            "cancion": "./../public/songs/werewolf.mp3",
+            "image_album": "./../public/images/songs/worewolf.jpg"
+        }
+    ]
+}

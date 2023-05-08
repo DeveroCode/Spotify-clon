@@ -105,6 +105,14 @@ footer {
     flex-direction: row;
 }
 
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
 /* Start my settings */
 /* -> Aside */
 .logo {
@@ -397,9 +405,13 @@ footer {
     max-width: 39.1rem;
 }
 
-.buttons {
+.buttons-play {
+    width: 100%;
+    max-width: 35.5rem;
+    margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2.5rem;
 }
 
 .center {
@@ -421,6 +433,41 @@ footer {
     border: none;
 }
 
+/* Preview - Info the song */
+.album-preview {
+    width: 100%;
+    max-width: 27rem;
+    height: 9.3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.others {
+    width: 100%;
+    max-width: 27rem;
+}
+
+.image-album img {
+    width: 5.7rem;
+    height: 5.7rem;
+    padding: 0 0 0 2rem;
+}
+
+.color {
+    color: var(--Color-white) !important;
+}
+
+.text-album {
+    font-size: 1.2rem;
+    color: var(--Color-white) !important;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
 
 @media (min-width: 999px) {
 
@@ -500,6 +547,29 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    /* Start play section */
+    footer {
+        width: 100%;
+        max-width: 160rem;
+    }
+
+    .cont-buttons {
+        width: 100%;
+        max-width: 160rem !important;
+    }
+
+    .buttons-play {
+        width: 100%;
+        max-width: 63rem;
+        align-items: center;
+    }
+
+    .others,
+    .album-preview {
+        width: 100%;
+        max-width: 44.7rem;
     }
 
 }
