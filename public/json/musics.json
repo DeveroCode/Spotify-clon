@@ -29,6 +29,12 @@
             "artist": "Motionless In White",
             "cancion": "./../public/songs/werewolf.mp3",
             "image_album": "./../public/images/songs/worewolf.jpg"
+        },
+        {
+            "name": "Duro dos horas",
+            "artist": "Faraon Love Sheidi",
+            "cancion": "./../public/songs/faraon.mp3",
+            "image_album": "./../public/images/songs/faraon.jpg"
         }
     ]
 }
