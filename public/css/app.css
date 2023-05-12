@@ -62,10 +62,15 @@ li {
 }
 
 aside {
-    width: 100%;
+    width: 24rem;
     height: 200vh;
-    max-width: 24rem !important;
+    /* max-width: 24rem !important; */
     background-color: black;
+    /* overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0; */
 }
 
 header {
@@ -76,9 +81,12 @@ header {
 
 main {
     width: 100%;
-    max-width: 167.1rem;
+    max-width: 166rem;
+    position: relative;
     display: flex;
     flex-direction: column;
+
+    /* overflow: scroll; */
 }
 
 footer {
@@ -588,24 +596,35 @@ footer {
     /* Start play section */
     footer {
         width: 100%;
-        max-width: 160rem;
+        max-width: 190rem;
     }
 
     .cont-buttons {
         width: 100%;
-        max-width: 160rem !important;
+        max-width: 77.2rem;
     }
 
-    .buttons-play {
+    .cont-buttons .buttons-play {
         width: 100%;
-        max-width: 63rem;
+        max-width: 77.2rem;
+
         align-items: center;
     }
 
     .others,
     .album-preview {
-        width: 100%;
-        max-width: 44.7rem;
+        width: 33.3%;
     }
 
+    .cont-timing {
+        width: 100%;
+        max-width: 62.2rem;
+
+        column-gap: 55rem;
+    }
+
+    .cont-bar-progress {
+        width: 100%;
+        max-width: 62.2rem;
+    }
 }

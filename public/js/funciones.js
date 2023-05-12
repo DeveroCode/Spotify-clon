@@ -55,7 +55,7 @@ function getAllPlaylist() {
     });
 
     // Agregar evento de escucha para cambios en el tamaño de la pantalla
-    window.addEventListener('resize', getAllPlaylist);
+    // window.addEventListener('resize', getAllPlaylist);
 }
 
 function getMixes() {
@@ -97,7 +97,7 @@ function getMixes() {
         }
     });
 
-    window.addEventListener('resize', getMixes);
+    // window.addEventListener('resize', getMixes);
 }
 
 
@@ -142,5 +142,5 @@ function getRecientemente() {
         }
     });
 
-    window.addEventListener('resize', getRecientemente);
+    // window.addEventListener('resize', getRecientemente);
 }   
