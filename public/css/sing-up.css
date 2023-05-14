@@ -1,0 +1,86 @@
+@import url(./root.css);
+
+header {
+    width: 100%;
+    max-width: 190rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Color-black);
+}
+
+/* Header */
+.logo {
+    padding-top: 1rem;
+}
+
+/* Register cont */
+.meta {
+    background: var(--Color-meta);
+    border: none !important;
+}
+
+.card {
+    width: 100%;
+    max-width: 20rem;
+    border: 0.2rem solid var(--Color-black);
+    border-radius: 10rem;
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.cont-text {
+    padding: 0.5rem 0 0.5rem 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.text-meta {
+    color: var(--Color-white);
+}
+
+.text {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+/* Second block */
+.divede {
+    display: table;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin: 0px auto 1em;
+    color: rgb(127, 127, 127);
+    position: relative;
+    text-align: center;
+    width: 40%;
+}
+
+.divede::before,
+.divede::after {
+    border-top: 1px solid rgb(204, 204, 204);
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 42%;
+}

@@ -1,26 +1,4 @@
-@font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/GothamLight.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/GothamBold.ttf');
-    font-weight: bold;
-}
-
-:root {
-    --Color-gray: #7B7B7B;
-    --Color-gray-secondary: #181818;
-    --Color-white: #fff;
-    --Color-black: #000;
-    --Color-second-black: #272A2E;
-    --Color-green: #1ed760;
-
-    --family: 'Gotham';
-}
+@import url(./root.css);
 
 html {
     font-size: 62.5%;
